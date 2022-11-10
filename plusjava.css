@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    background:linear-gradient(rgb(231, 109, 130),rgb(113, 113, 209)) ;
+}
+p{
+    width: 50%;
+    display: flex;
+    display: none;
+}
+.box{display: flex;
+     justify-content: center;
+     flex-direction: column;
+     margin: 10px 50px;
+    align-items: center;}
+
+h2{
+    background-color: rgb(15, 15, 15);
+    color: aliceblue;
+    padding: 10px;
+    margin: 5px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.active {
+    display: block;
+    
+    display: flex;
+    justify-content: center;
+}
+.active p{
+    display: block;
+}
+i{
+background-color: aliceblue;
+color: black;
+padding: 1px;
+border-radius: 50%;
+}
+i:hover{
+    transform: scale(1.2);
+}

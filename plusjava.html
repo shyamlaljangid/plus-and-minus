@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plus java click</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="plusjava.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="boxes">
+            <div class="box">
+                <h2> According Heading 1<i class="fa-solid fa-minus"></i>
+                </h2>
+                <div class="active">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium in eius repellendus totam fuga
+                    expedita dolor. Odio natus magni a? Sunt magnam pariatur facilis ad minus iure. Excepturi, provident
+                    voluptatem!</p>
+                </div>
+            </div>
+            <div class="box">
+                <h2> According Heading 2 <i class="fa-solid fa-plus"></i></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium in eius repellendus totam fuga
+                    expedita dolor. Odio natus magni a? Sunt magnam pariatur facilis ad minus iure. Excepturi, provident
+                    voluptatem!</p>
+            </div>
+            <div class="box">
+                <h2> According Heading 3<i class="fa-solid fa-plus"></i> </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium in eius repellendus totam fuga
+                    expedita dolor. Odio natus magni a? Sunt magnam pariatur facilis ad minus iure. Excepturi, provident
+                    voluptatem!</p>
+            </div>
+            <div class="box">
+                <h2> According Heading 4 <i class="fa-solid fa-plus"></i></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium in eius repellendus totam fuga
+                    expedita dolor. Odio natus magni a? Sunt magnam pariatur facilis ad minus iure. Excepturi, provident
+                    voluptatem!</p>
+            </div>
+        </div>
+    </div>
+    <script>
+       
+        let plus = document.querySelectorAll(".box i")
+        plus.forEach( function(all){
+            all.onclick =  function () {
+                let para = all.parentElement.nextElementSibling
+               if(para.classList.contains("active")){
+                para.classList.remove("active")
+               
+              all.classList.remove("fa-minus")
+              all.classList.add("fa-plus")
+            
+            }
+          
+           else
+           {para.classList.add("active")
+
+           all.classList.remove("fa-plus")
+              all.classList.add("fa-minus")
+        }
+        }
+        })
+
+       
+    </script>
+</body>
+
+</html>
